@@ -1,4 +1,6 @@
 import { techLogos } from "../data/projects";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
 export function ProjectCard(props) {
     // needs title, description, img, tech stack, links

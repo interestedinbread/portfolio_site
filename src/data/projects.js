@@ -3,7 +3,7 @@ export const projects = [
     {
         title: "The Hummingbird Pub",
         description: "A website for a local pub on Galiano Island. This project allowed me to really put my tailwind skills to use. The client wanted to be able to update their own business hours and menu prices so I set up a Google script that allows the client to make updates by simply updating a Google Sheet.",
-        img: "/img/Hummingbird_pub_screenshot.png",
+        img: "/img/Hummingbird_pub_screenshot.jpg",
         stack:["html", "js", "tailwind"],
         links: "https://hummingbirdpub.com"
     },
@@ -17,10 +17,16 @@ export const projects = [
     {
         title: "Ixchel",
         description: "A static website for a local handcraft shop. The entire content of the site was made using image files from the client's facebook so they didn't need to put in any extra effort. This was my first website for a real client.",
-        img: "/img/ixchel_screenshot.png",
+        img: "/img/ixchel_screenshot.jpg",
         stack: ["html", "js", "css"],
         links: "https://ixchel-galiano.netlify.app"
-    }
+    },
+    // {
+    //     title: "Full Snack",
+    //     description: "An AI powered meal generator app. It started with the idea of helping users think of meal ideas based on what they have in their pantry, then expanded to allow multiple ways to brainstorm ideas and also manage a grocery list."
+    //     img: "",
+    //     stack: 
+    // }
 ]
 
 export const techLogos = {
