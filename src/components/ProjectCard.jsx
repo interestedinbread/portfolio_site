@@ -1,6 +1,8 @@
 import { techLogos } from "../data/projects";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/navigation";
 
 export function ProjectCard(props) {
     // needs title, description, img, tech stack, links
@@ -22,15 +24,35 @@ export function ProjectCard(props) {
                     <p className="text-cyan-400">{project.links}</p>
                 </div>
                 <div className="w-1/2">
-                    <img className="shadow-md rounded-lg"
-                    src={project.img} />
+                    <Swiper 
+                    spaceBetween={20} 
+                    slidesPerView={1}
+                    modules={[Navigation]}
+                    navigation={true}
+                    >
+                        {project.imgs.map((img, index) => (
+                            <SwiperSlide key={index}>
+                                <img src={img} className="rounded-md"/>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
                 </div>
             </div>
         ) : (
             <div className="flex h-[400px]">
                 <div className="w-1/2">
-                    <img className="shadow-md rounded-lg"
-                    src={project.img} />
+                    <Swiper 
+                    spaceBetween={20} 
+                    slidesPerView={1}
+                    modules={[Navigation]}
+                    navigation={true}
+                    >
+                        {project.imgs.map((img, index) => (
+                            <SwiperSlide key={index}>
+                                <img src={img} className="rounded-md"/>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
                 </div>
                 <div className="w-1/2 p-8">
                     <h3 className="text-cyan-400 nunito-sans-regular text-2xl">{project.title}</h3>
