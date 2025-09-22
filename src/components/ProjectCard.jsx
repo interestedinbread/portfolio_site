@@ -23,16 +23,19 @@ export function ProjectCard(props) {
                     </ul>
                     <p className="text-cyan-400">{project.links}</p>
                 </div>
-                <div className="w-1/2">
+                <div className="w-1/2 h-[400px]">
                     <Swiper 
-                    spaceBetween={20} 
-                    slidesPerView={1}
+                    spaceBetween={project.mobile? 5 : 20} 
+                    slidesPerView={project.mobile ? 2 : 1}
                     modules={[Navigation]}
                     navigation={true}
+                    slidesOffsetBefore={project.mobile ? 75 : 0}
                     >
                         {project.imgs.map((img, index) => (
-                            <SwiperSlide key={index}>
-                                <img src={img} className="rounded-md"/>
+                            <SwiperSlide key={index}
+                            className="mx-auto">
+                                <img src={img} 
+                                className="rounded-md h-[400px]"/>
                             </SwiperSlide>
                         ))}
                     </Swiper>
@@ -40,16 +43,19 @@ export function ProjectCard(props) {
             </div>
         ) : (
             <div className="flex h-[400px]">
-                <div className="w-1/2">
+                <div className="w-1/2 h-[400px]">
                     <Swiper 
-                    spaceBetween={20} 
-                    slidesPerView={1}
+                    spaceBetween={project.mobile? 5 : 20} 
+                    slidesPerView={project.mobile ? 2 : 1}
                     modules={[Navigation]}
                     navigation={true}
+                    slidesOffsetBefore={project.mobile ? 70 : 0}
                     >
                         {project.imgs.map((img, index) => (
-                            <SwiperSlide key={index}>
-                                <img src={img} className="rounded-md"/>
+                            <SwiperSlide key={index}
+                            className="mx-auto">
+                                <img src={img} 
+                                className={project.mobile ? "rounded-lg h-[400px] border-2 border-cyan-300" : "rounded-lg h-[400px] border-2"}/>
                             </SwiperSlide>
                         ))}
                     </Swiper>
