@@ -1,6 +1,7 @@
 import { techLogos } from "../data/projects";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import { motion } from "framer-motion";
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -8,10 +9,28 @@ export function ProjectCard(props) {
     // needs title, description, img, tech stack, links
     const { project, index } = props
 
+    const cardVariants = {
+        hidden: { opacity: 0, y: 50 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.6,
+                ease: "easeOut"
+            }
+        }
+    }; 
+
     return(
         <>
         {index % 2 === 0 ? (
-            <div className="flex h-[400px]">
+            <motion.div 
+            className="flex h-[400px] gap-8"
+            variants={cardVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            >
                 <div className="w-1/2 p-8">
                     <h3 className="text-cyan-400 nunito-sans-regular text-3xl">{project.title}</h3>
                     <p className="text-gray-300 nunito-sans-regular text-lg my-6">{project.description}</p>
@@ -42,9 +61,15 @@ export function ProjectCard(props) {
                         ))}
                     </Swiper>
                 </div>
-            </div>
+            </motion.div>
         ) : (
-            <div className="flex h-[400px]">
+            <motion.div 
+            className="flex h-[400px] gap-8"
+            variants={cardVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            >
                 <div className="w-1/2 h-[400px]">
                     <Swiper 
                     spaceBetween={project.mobile? 5 : 20} 
@@ -75,7 +100,7 @@ export function ProjectCard(props) {
                         <p className="text-cyan-400">{project.link}</p>
                     </a>
                 </div>
-            </div>
+            </motion.div>
         )}
         </>
     )

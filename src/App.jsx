@@ -2,6 +2,7 @@ import { Header } from "./components/Header"
 import { Nav } from "./components/Nav"
 import { ProjectList } from "./components/ProjectList"
 import { Skills } from "./components/Skills"
+import { ButtonBar } from "./components/ButtonBar"
 
 function App() {
   
@@ -10,6 +11,7 @@ function App() {
     <>
       <Nav/>
       <Header/>
+      <ButtonBar />
       <Skills />
       <ProjectList/>
       {/* about me component */}
