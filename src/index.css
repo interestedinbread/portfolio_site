@@ -2,17 +2,16 @@
 @import "tailwindcss";
 
 html, body {
-  background-image: url('/img/batthern-1920x1080.png');
+  background-image: url('/img/asfalt--light--1920x1080.png');
   background-size: 100% auto;
   background-position: center top;
   background-repeat: repeat-y;
   min-height: 100vh;
   height: 100%;
-}
-
-body {
   overscroll-behavior: none;
 }
+
+
 
 .nunito-sans-regular {
   font-family: "Nunito Sans", sans-serif;
@@ -23,3 +22,15 @@ body {
     "wdth" 100,
     "YTLC" 500;
 }
+
+.nunito-sans-italic {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+
