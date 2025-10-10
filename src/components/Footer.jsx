@@ -1,0 +1,26 @@
+
+export function Footer(){
+
+const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+}
+
+    return(
+        <footer className="bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900 mt-24 py-24 border-t border-cyan-400/20">
+            <div className="flex w-9/10 mx-auto justify-between">
+                <div>
+                    <h3 className="text-cyan-400 font-bold text-xl mb-4 nunito-sans-bold">
+                    © {new Date().getFullYear()} Eric Morrison
+                    </h3>
+                    <p className="text-gray-400 text-sm source-code-pro-regular">
+                        Full Stack Developer specializing in React, Node.js, and modern web technologies.
+                    </p>
+                </div>
+                <button onClick={scrollToTop}>
+                    <img src="/img/noun-chevron-up-7864000-67E8F9.svg"
+                    className="h-[75px] w-[75px]"/>
+                </button>
+            </div>
+        </footer>
+    )
+}

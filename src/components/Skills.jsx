@@ -28,7 +28,7 @@ export function Skills () {
 
     return(
         <>
-            <h2 className="nunito-sans-bold text-6xl my-24 text-cyan-300 text-center">Skills</h2>
+            <h2 className="nunito-sans-bold text-5xl my-24 text-cyan-300 text-center">Skills</h2>
             <motion.div 
             variants={listVariants}
             initial="hidden"
