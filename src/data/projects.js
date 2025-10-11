@@ -11,14 +11,14 @@ export const projects = [
     {
         title: "The Hummingbird Pub",
         description: "Website for a local business built with Tailwind CSS. Integrated a custom Google Apps Script that syncs the site with a Google Sheet, allowing the client to update menu items and hours without touching the code.",
-        imgs: ["/img/Hummingbird_pub_screenshot.jpg", "/img/Hummingbird_pub_screenshot_2_small.jpg", "/img/Hummingbird_pub_screenshot_3_small.jpg"],
+        imgs: ["/img/Hummingbird_Screenshots/Hummingbird_pub_screenshot.jpg", "/img/Hummingbird_Screenshots/Hummingbird_pub_screenshot_2_small.jpg", "/img/Hummingbird_Screenshots/Hummingbird_pub_screenshot_3_small.jpg"],
         stack:["html", "js", "tailwind"],
         link: "https://hummingbirdpub.com",
         mobile: false
     },
     {
         title: "Do Date",
-        description: "A reminder app using aws services such as cognito, dynamo, eventbridge, and Lambda. SMS messaging is handled by Twilio. This project allowed me to flex my full stack development skills while also learning Typescript on the fly.",
+        description: "A reminder app using aws services such as Cognito, Dynamo, EventBridge, and Lambda. SMS messaging is handled by Twilio. This project allowed me to flex my full stack development skills while also learning Typescript on the fly.",
         imgs: ["/img/do_date_screenshots/do_date_screenshot_1.jpeg", "/img/do_date_screenshots/do_date_screenshot_2.jpeg", "/img/do_date_screenshots/do_date_screenshot_3.jpeg", "/img/do_date_screenshots/do_date_screenshot_4.jpeg", "/img/do_date_screenshots/do_date_screenshot_5.jpeg",],
         stack: ["html", "js", "typescript", "tailwind", "node", "react"],
         link: "https://do-date.vercel.app/",
@@ -27,7 +27,7 @@ export const projects = [
     {
         title: "Max & Moritz",
         description: "Website for a food truck near the ferry terminal on Galiano Island, BC. Built with HTML, JavaScript, and Tailwind CSS, using a minimal design and image assets sourced from the client’s Facebook page and my own photography.",
-        imgs: ["/img/Max_and_Moritz_screenshot_1.jpg", "/img/Max_and_moritz_screenshot_2.jpg", "/img/Max_and_moritz_screenshot_3.jpg"],
+        imgs: ["/img/Max_and_Moritz_Screenshots/Max_and_Moritz_screenshot_1.jpg", "/img/Max_and_Moritz_Screenshots/Max_and_moritz_screenshot_2.jpg", "/img/Max_and_Moritz_Screenshots/Max_and_moritz_screenshot_3.jpg"],
         stack:["html", "js", "tailwind"],
         link: "https://maxandmoritz.netlify.app",
         mobile: false
@@ -35,7 +35,7 @@ export const projects = [
     {
         title: "Ixchel",
         description: "A static website for a local artisan shop. Built entirely with images sourced from the client’s Facebook page so they could have a professional online presence with no extra setup. This was my first live project for a real client.",
-        imgs: ["/img/Ixchel_screenshot_1.jpg", "/img/ixchel_screenshot_2.jpg", "/img/ixchel_screenshot_3.jpg"],
+        imgs: ["/img/Ixchel_Screenshots/Ixchel_screenshot_1.jpg", "/img/Ixchel_Screenshots/ixchel_screenshot_2.jpg", "/img/Ixchel_Screenshots/ixchel_screenshot_3.jpg"],
         stack: ["html", "js", "css"],
         link: "https://ixchel-galiano.netlify.app",
         mobile: false
