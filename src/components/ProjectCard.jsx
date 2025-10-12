@@ -77,7 +77,7 @@ export function ProjectCard(props) {
                             <SwiperSlide key={index}
                             className="mx-auto">
                                 <img src={img} 
-                                className={project.mobile ? "rounded-[1.5rem] h-[400px] border-2 border-cyan-300" : isSmallDisplay? "rounded-lg border-2" : "rounded-lg h-[400px] border-2"}/>
+                                className={project.mobile ? "rounded-[1.5rem] h-[400px] border-2 border-cyan-300" : isSmallDisplay ? "rounded-lg border-2" : "rounded-lg h-[400px] border-2"}/>
                             </SwiperSlide>
                         ))}
                     </Swiper>

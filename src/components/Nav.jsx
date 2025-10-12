@@ -1,8 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef} from "react";
 
 export function Nav() {
 
     const [scrolled, setScrolled] = useState(false);
+    const [navHeight, setNavHeight] = useState(0)
+
+    const navRef = useRef(null)
 
     useEffect(() => {
         const handleScroll = () => {
@@ -20,11 +23,25 @@ export function Nav() {
         }
     }, []);
 
+    useEffect(() => {
+        if(navRef.current){
+            setNavHeight(navRef.current.offsetHeight);
+        }
+    },[])
+
     const scrollToSection = (sectionId) => {
         const element = document.getElementById(sectionId);
         if(element) {
-            element.scrollIntoView({ behavior: 'smooth' });
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - navHeight;
+
+            window.scrollTo({
+                top: offsetPosition - 20,
+                behavior: 'smooth'
+            });
         }
+
+        
     };
 
     return(
@@ -33,7 +50,9 @@ export function Nav() {
                 scrolled 
                     ? 'bg-slate-900/95 backdrop-blur-md shadow-lg' 
                     : 'bg-transparent'
-            }`}>
+                }`}
+                ref={navRef}
+                >
                 <ul className="flex gap-6 md:gap-4">
                     <li>
                         <button 
