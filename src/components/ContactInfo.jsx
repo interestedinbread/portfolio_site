@@ -12,8 +12,10 @@ export function ContactInfo() {
                         <img src={item.imgPath}
                         className="h-[50px] w-50[px]" />
                         <div>
-                            <p className="source-code-pro-regular text-gray-300">{item.title}</p>
-                            <p className="source-code-pro-regular text-gray-300">{item.value}</p>
+                            <p className="source-code-pro-regular text-sm md:text-base text-gray-300">{item.title}</p>
+                            <p className="source-code-pro-regular text-sm md:text-base text-gray-300">
+                                <a href="https://github.com/interestedinbread">{item.value}</a>
+                                </p>
                         </div>
                     </div>
                 ))}
