@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Nav/>
-      <div className="mt-38">
+      <div className="mt-24 md:mt-38">
         <Header />
         <ButtonBar />
         <div id="projects">
