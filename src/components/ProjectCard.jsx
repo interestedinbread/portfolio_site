@@ -97,7 +97,7 @@ export function ProjectCard(props) {
                     slidesPerView={project.mobile ? 2 : 1}
                     modules={[Navigation]}
                     navigation={true}
-                    slidesOffsetBefore={project.mobile ? 70 : 0}
+                    slidesOffsetBefore={project.mobile ? 80 : 0}
                     >
                         {project.imgs.map((img, index) => (
                             <SwiperSlide key={index}

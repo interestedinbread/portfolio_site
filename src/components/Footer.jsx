@@ -17,7 +17,7 @@ const scrollToTop = () => {
                     </p>
                 </div>
                 <button onClick={scrollToTop}>
-                    <img src="/img/noun-chevron-up-7864000-67E8F9.svg"
+                    <img src={`${import.meta.env.BASE_URL}img/noun-chevron-up-7864000-67E8F9.svg`}
                     className="h-[50px] w-[50px] md:h-[75px] md:w-[75px]"/>
                 </button>
             </div>

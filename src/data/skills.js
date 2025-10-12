@@ -1,7 +1,9 @@
+const BASE_URL = import.meta.env.BASE_URL;
+
 export const skillsData = [
     {
         title: "Frontend",
-        icon: "/img/Web_dev_skill_icons/SVGs/noun-computer-screen-7186220-67E8F9.svg",
+        icon: `${BASE_URL}img/Web_dev_skill_icons/SVGs/noun-computer-screen-7186220-67E8F9.svg`,
         points: [
             "JavaScript (ES6+)",
             "TypeScript",
@@ -14,7 +16,7 @@ export const skillsData = [
     },
     {
         title: "Backend",
-        icon: "/img/Web_dev_skill_icons/SVGs/noun-backend-7223052-67E8F9.svg",
+        icon: `${BASE_URL}img/Web_dev_skill_icons/SVGs/noun-backend-7223052-67E8F9.svg`,
         points: [
             "Node.js",
             "Express.js",
@@ -24,7 +26,7 @@ export const skillsData = [
     },
     {
         title: "Database",
-        icon: "/img/Web_dev_skill_icons/SVGs/noun-database-8106131-67E8F9.svg",
+        icon: `${BASE_URL}img/Web_dev_skill_icons/SVGs/noun-database-8106131-67E8F9.svg`,
         points: [
             "PostgreSQL",
             "MySql",
@@ -33,7 +35,7 @@ export const skillsData = [
     },
     {
         title: "APIs & Integrations",
-        icon: "/img/Web_dev_skill_icons/SVGs/noun-api-7983790-67E8F9.svg",
+        icon: `${BASE_URL}img/Web_dev_skill_icons/SVGs/noun-api-7983790-67E8F9.svg`,
         points: [
             "RESTful API design",
             "OpenAI API",
@@ -44,7 +46,7 @@ export const skillsData = [
     },
     {
         title: "AWS Cloud Services",
-        icon: "/img/Web_dev_skill_icons/SVGs/noun-cloud-8083021-67E8F9.svg",
+        icon: `${BASE_URL}img/Web_dev_skill_icons/SVGs/noun-cloud-8083021-67E8F9.svg`,
         points: [
             "Cognito",
             "Lambda",
@@ -54,7 +56,7 @@ export const skillsData = [
     },
     {
         title: "DevOps & Deployment",
-        icon: "/img/Web_dev_skill_icons/SVGs/noun-deployment-7934995-67E8F9.svg",
+        icon: `${BASE_URL}img/Web_dev_skill_icons/SVGs/noun-deployment-7934995-67E8F9.svg`,
         points: [
             "Render",
             "Railway",
