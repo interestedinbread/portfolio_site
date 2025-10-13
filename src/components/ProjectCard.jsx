@@ -91,7 +91,7 @@ export function ProjectCard(props) {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             >
-                <div className="md:w-1/2 md:h-[400px]">
+                <div className="w-full md:w-1/2 md:h-[400px]">
                     <Swiper 
                     spaceBetween={project.mobile? 5 : 20} 
                     slidesPerView={project.mobile ? 2 : 1}
