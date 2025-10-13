@@ -67,17 +67,18 @@ export function ProjectCard(props) {
                 </div>
                 <div className="mt-8 md:mt-0 md:w-1/2 md:h-[400px]">
                     <Swiper 
-                    spaceBetween={project.mobile? 5 : 20} 
-                    slidesPerView={project.mobile ? (isSmallDisplay ? 1 : 2) : 1}
+                    spaceBetween={project.app? 5 : 20} 
+                    slidesPerView={project.app ? (isSmallDisplay ? 1 : 2) : 1}
                     modules={[Navigation]}
                     navigation={true}
-                    slidesOffsetBefore={project.mobile ? (isSmallDisplay? 60 : 75) : 0}
+                    slidesOffsetBefore={project.app ? (isSmallDisplay? 0 : 75) : 0}
                     >
-                        {project.imgs.map((img, index) => (
+                        {/* if the display is small AND the project has mobile images, we show those. If there are no mobile images, it's an app and has mobile size imgs by default so we just use project.imgs */}
+                        {(isSmallDisplay? project.mobileImgs ? project.mobileImgs : project.imgs : project.imgs).map((img, index) => (
                             <SwiperSlide key={index}
                             className="mx-auto">
                                 <img src={img} 
-                                className={project.mobile ? "rounded-[1.5rem] h-[400px] border-2 border-cyan-300" : isSmallDisplay ? "rounded-lg border-2" : "rounded-lg h-[400px] border-2"}/>
+                                className={project.app ? "rounded-[1.5rem] md:h-[400px] border-2 border-cyan-300" : isSmallDisplay ? "rounded-[1.5rem] md:h-[400px] border-2 border-cyan-300" : "rounded-lg h-[400px] border-2"}/>
                             </SwiperSlide>
                         ))}
                     </Swiper>
@@ -93,17 +94,17 @@ export function ProjectCard(props) {
             >
                 <div className="w-full md:w-1/2 md:h-[400px]">
                     <Swiper 
-                    spaceBetween={project.mobile? 5 : 20} 
-                    slidesPerView={project.mobile ? 2 : 1}
+                    spaceBetween={project.app? 5 : 20} 
+                    slidesPerView={project.app ? 2 : 1}
                     modules={[Navigation]}
                     navigation={true}
-                    slidesOffsetBefore={project.mobile ? 80 : 0}
+                    slidesOffsetBefore={project.app ? 80 : 0}
                     >
                         {project.imgs.map((img, index) => (
                             <SwiperSlide key={index}
                             className="mx-auto">
                                 <img src={img} 
-                                className={project.mobile ? "rounded-lg h-[400px] border-2 border-cyan-300" : "rounded-lg h-[400px] border-2"}/>
+                                className={project.app ? "rounded-lg h-[400px] border-2 border-cyan-300" : "rounded-lg h-[400px] border-2"}/>
                             </SwiperSlide>
                         ))}
                     </Swiper>
