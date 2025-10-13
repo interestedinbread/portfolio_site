@@ -55,7 +55,7 @@ export function ProjectCard(props) {
                 <div className="md:w-1/2 md:p-8">
                     <h3 className="text-cyan-400 nunito-sans-regular text-3xl">{project.title}</h3>
                     <p className="text-gray-300 nunito-sans-regular text-lg my-6">{project.description}</p>
-                    <ul className="grid grid-cols-4 gap-4 mb-8">
+                    <ul className="grid grid-cols-4 md:flex gap-4 md:gap-8 mb-8">
                         {project.stack.map((item, index) => (
                             <li key={index}><img className="h-[50px] w-[50px] rounded-md" 
                             src={techLogos[item]}/></li>
