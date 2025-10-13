@@ -31,7 +31,7 @@ export function Header() {
                 </div>
                 <div className="md:col-span-2 mt-4 md-mt-0">
                     <h4 className="nunito-sans-regular md:source-code-pro-italic text-base md:text-xl mb-4 md:w-9/10 text-gray-300">I’m a self-taught developer who builds responsive, data-driven web apps using React, Tailwind, Node, Express, and PostgreSQL.</h4>
-                    <h4 className="nunito-sans-regular md:source-code-pro-italic text-base md:text-xl mb-4 md:w-9/10 text-gray-300">I’ve deployed several full stack apps and worked directly with clients in my community. This has taught me not only how to code, but to communicate clearly, establish expectations, and deliver usable results.</h4>
+                    <h4 className="nunito-sans-regular md:source-code-pro-italic text-base md:text-xl mb-4 md:w-9/10 text-gray-300">I’ve deployed several full stack projects and worked directly with clients in my community. This has taught me not only how to code, but to communicate clearly, establish expectations, and deliver usable results.</h4>
                     <h4 className="nunito-sans-regular md:source-code-pro-italic text-base md:text-xl mt-4 md:mt-8 md:w-9/10 text-gray-300">I am constantly learning and absolutely LOVE a challenge. Let's build something!</h4>
                 </div>
                 <div className="grid grid-rows-2 grid-cols-4 md:flex gap-2 md:gap-6 md:col-span-2 gap-y-12 my-8 ml-4 max-h-[100px]">
