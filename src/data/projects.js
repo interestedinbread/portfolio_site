@@ -17,7 +17,7 @@ export const projects = [
     },
     {
         title: "The Hummingbird Pub",
-        description: "Website for a local business built with Tailwind CSS. Integrated a custom Google Apps Script that syncs the site with a Google Sheet, allowing the client to update menu items and hours without touching the code.",
+        description: "Website for a local business built with Tailwind CSS. Integrated a custom Google Apps Script that syncs the site with a Google Sheet, allowing the client to update menu prices and business hours without touching the code.",
         imgs: [`${BASE_URL}img/Hummingbird_Screenshots/Hummingbird_pub_screenshot.jpg`, 
             `${BASE_URL}img/Hummingbird_Screenshots/Hummingbird_pub_screenshot_2_small.jpg`, 
             `${BASE_URL}img/Hummingbird_Screenshots/Hummingbird_pub_screenshot_3_small.jpg`],
@@ -77,7 +77,7 @@ export const techLogos = {
     js: `${BASE_URL}img/logos/JavaScript-logo.png`,
     tailwind: `${BASE_URL}img/logos/tailwind_css_logo.png`,
     css: `${BASE_URL}img/logos/CSS3_logo.svg.png`,
-    react: `${BASE_URL}img/logos/React-icon.svg.png`,
+    react: `${BASE_URL}img/logos/react-1-logo-png-transparent.png`,
     typescript: `${BASE_URL}img/logos/Typescript.logo.png`,
     node: `${BASE_URL}img/logos/nodejs_logo.png`
 }
