@@ -27,7 +27,7 @@ export function Header() {
                     </h3>
                 </div>
                 <div className="md:col-start-3 md:col-span-1 md:row-start-1 md:row-span-3">
-                    <img src={`${import.meta.env.BASE_URL}/img/Eric_Morrison_pic_2.jpg`} className="rounded-lg shadow-md"></img>
+                    <img src={`${import.meta.env.BASE_URL}img/Eric_Morrison_pic_2.jpg`} className="rounded-lg shadow-md"></img>
                 </div>
                 <div className="md:col-span-2 mt-4 md-mt-0">
                     <h4 className="nunito-sans-regular md:source-code-pro-italic text-base md:text-xl mb-4 md:w-9/10 text-gray-300">I’m a self-taught developer who builds responsive, data-driven web apps using React, Tailwind, Node, Express, and PostgreSQL.</h4>
