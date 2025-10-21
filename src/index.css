@@ -22,8 +22,6 @@ html::before {
   min-height: 100vh;
 }
 
-
-
 .nunito-sans-regular {
   font-family: "Nunito Sans", sans-serif;
   font-optical-sizing: auto;
