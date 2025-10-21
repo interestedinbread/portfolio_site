@@ -1,4 +1,5 @@
 // Add button links to download resume or visit linkedIn profile
+// Updated for Vercel deployment
 
 export function ButtonBar() {
 
