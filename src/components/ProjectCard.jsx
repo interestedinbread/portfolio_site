@@ -95,13 +95,13 @@ export function ProjectCard(props) {
             </motion.div>
         ) : (
             <motion.div 
-            className="md:flex md:h-[400px] gap-8"
+            className="md:grid grid-cols-2 md:h-[400px] gap-8"
             variants={cardVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             >
-                <div className="w-full md:w-1/2 md:h-[400px]">
+                <div className="w-full md:col-span-1 md:h-[400px]">
                     <Swiper 
                     spaceBetween={project.app? 5 : 20} 
                     slidesPerView={project.app ? 2 : 1}
@@ -118,7 +118,7 @@ export function ProjectCard(props) {
                         ))}
                     </Swiper>
                 </div>
-                <div className="md:w-1/2 p-8">
+                <div className="md:col-span-1 p-8">
                     <h3 className="text-cyan-400 nunito-sans-regular text-3xl">{project.title}</h3>
                     <p className="text-gray-300 nunito-sans-regular text-lg my-6">{project.description}</p>
                     <ul className="flex gap-4 mb-8">
@@ -131,6 +131,15 @@ export function ProjectCard(props) {
                         <p className="text-cyan-400">{project.link}</p>
                     </a>
                 </div>
+                {project.videoLink && (
+                    <div className="col-span-2 md:h-[400px] mt-12">
+                    <iframe 
+                        src={project.videoLink}
+                        className="w-full md:w-1/2 md:h-full mx-auto"
+                        allowFullScreen
+                    />
+                    </div>
+                )}
             </motion.div>
         )}
         </>
