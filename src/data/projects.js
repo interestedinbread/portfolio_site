@@ -13,7 +13,8 @@ export const projects = [
             `${BASE_URL}img/Fullsnack_screenshots/fullsnack_screenshot_6.jpeg`],
         stack: ["html", "js", "tailwind", "node", "react"],
         link: "https://full-snack-client.onrender.com",
-        app: true
+        app: true,
+        videoLink: "https://www.youtube.com/embed/OFFs98RpPew?si=xo45pg4Qp8oY-DMh"
     },
     {
         title: "The Hummingbird Pub",

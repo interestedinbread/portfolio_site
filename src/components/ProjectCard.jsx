@@ -46,13 +46,13 @@ export function ProjectCard(props) {
         <>
         {index % 2 === 0 || isSmallDisplay ? (
             <motion.div 
-            className="md:flex md:h-[400px] gap-8"
+            className="md:grid grid-cols-2 md:h-max gap-8"
             variants={cardVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: isSmallDisplay ? 0.1 : 0.2 }}
             >
-                <div className="md:w-1/2 md:p-8">
+                <div className="md:col-span-1 md:p-8">
                     <h3 className="text-cyan-400 nunito-sans-regular text-3xl">{project.title}</h3>
                     <p className="text-gray-300 nunito-sans-regular text-lg my-6">{project.description}</p>
                     <ul className="grid grid-cols-4 md:flex gap-4 md:gap-8 mb-8">
@@ -65,7 +65,7 @@ export function ProjectCard(props) {
                         <p className="text-cyan-400">{project.link}</p>
                     </a>
                 </div>
-                <div className="mt-8 md:mt-0 md:w-1/2 md:h-[400px]">
+                <div className="mt-8 md:mt-0 md:col-span-1 md:h-[400px]">
                     <Swiper 
                     spaceBetween={project.app? 5 : 20} 
                     slidesPerView={project.app ? (isSmallDisplay ? 1 : 2) : 1}
@@ -83,6 +83,15 @@ export function ProjectCard(props) {
                         ))}
                     </Swiper>
                 </div>
+                {project.videoLink && (
+                    <div className="col-span-2 md:h-[400px] mt-12">
+                    <iframe 
+                        src={project.videoLink}
+                        className="w-full md:w-1/2 md:h-full mx-auto"
+                        allowFullScreen
+                    />
+                    </div>
+                )}
             </motion.div>
         ) : (
             <motion.div 
