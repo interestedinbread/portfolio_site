@@ -3,6 +3,21 @@ const BASE_URL = import.meta.env.BASE_URL;
 
 export const projects = [
     {
+        title: "Policy Boi",
+        description: "A RAG-powered automated assistant for navigating pet insurance policies. Users can upload their policies and get instant, accurate advice, generate structured policy summaries, compare policies, and generate claim checklists.",
+        imgs: [`${BASE_URL}img/Policy_Boi_screenshots/Policy_Boi_pic_1.jpg`, 
+            `${BASE_URL}img/Policy_Boi_screenshots/Policy_Boi_pic_2.jpg`,
+            `${BASE_URL}img/Policy_Boi_screenshots/Policy_boi_pic_3.jpg`,
+            `${BASE_URL}img/Policy_Boi_screenshots/Policy_Boi_pic_4.jpg`,
+            `${BASE_URL}img/Policy_Boi_screenshots/Policy_Boi_pic_5.jpg`,
+            `${BASE_URL}img/Policy_Boi_screenshots/Policy_Boi_pic_6.jpg`
+            ],
+        stack: ["html", "js", "tailwind", "node", "react"],
+        link: "https://policyboi.vercel.app/",
+        app: false
+        
+    },
+    {
         title: "Full Snack",
         description: "An AI-powered meal inspiration app that helps users generate meal ideas based on their pantry ingredients, preferences, or even a simple text prompt. The project grew into a full-stack solution that also lets users save meals and manage grocery lists directly within the app.",
         imgs: [`${BASE_URL}img/Fullsnack_screenshots/fullsnack_screenshot_1.jpeg`, 
@@ -13,8 +28,8 @@ export const projects = [
             `${BASE_URL}img/Fullsnack_screenshots/fullsnack_screenshot_6.jpeg`],
         stack: ["html", "js", "tailwind", "node", "react"],
         link: "https://full-snack-client.onrender.com",
-        app: true,
-        videoLink: "https://www.youtube.com/embed/OFFs98RpPew?si=xo45pg4Qp8oY-DMh"
+        app: true
+        
     },
     {
         title: "The Hummingbird Pub",
