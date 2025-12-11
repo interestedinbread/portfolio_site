@@ -17,7 +17,7 @@ export const projects = [
             `${BASE_URL}img/Policy_Boi_mobile_screenshots/Policy_boi_mobile_screenshot_3.jpeg`,
             `${BASE_URL}img/Policy_Boi_mobile_screenshots/Policy_boi_mobile_screenshot_4.jpeg`,
             `${BASE_URL}img/Policy_Boi_mobile_screenshots/Policy_boi_mobile_screenshot_5.jpeg`
-        ]
+        ],
         stack: ["html", "js", "tailwind", "node", "react"],
         link: "https://policyboi.vercel.app/",
         app: false
